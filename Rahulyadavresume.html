@@ -1,0 +1,474 @@
+<!doctype html><html><head> 
+  <title>
+   The calculator!!  
+ </title> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root{
+   --f1:'Poppins', sans-serif;
+   --f2:'Raleway',sans-serif;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+li
+{
+  list-style:none;
+}
+header
+{
+  background: #6700ee;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo
+{
+  color:#00f7ff;
+  font-family:var(--f1);
+  padding:.5em .5em;
+  font-size:20px;
+}
+nav ul
+{
+  display:flex;
+  padding:.5em .5em;
+}
+nav ul li
+{
+  margin-left:1em;
+  font-family: 'Raleway', sans-serif;
+}
+.banner{
+    background:#6e00ff;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+ }
+.banner h1
+{
+  color:white;
+  font-family:var(--f1);
+  padding:3em .5em 0;
+  line-height:30px;
+  font-size:30px;
+}
+.banner p
+{
+  padding:.5em .9em;
+  color:#00f7ff;
+  font-family:'Raleway',sans-serif;
+}
+.banner h1:first-letter
+{
+    color:white;
+    font-size:35px
+}
+.banner::after
+{
+  content:"";
+  position:absolute;
+  width:50vh;
+  height:50vh;
+  background:rgba(255,192,203,.4);
+  border-radius:50%;
+  z-index:-1;
+  right:-20;
+  top:0;
+  
+ 
+}
+.start-btn{
+    border:2px solid white;
+    padding:.5em 1em;
+    color:white;
+    border-radius:5px;
+    font-size:15px;
+    font-family:var(--f2);/*'Raleway',sans-serif;*/
+    background:transparent;
+    margin-left:.9em;
+    outline:0;
+    margin-top:1em;
+    font-weight:600;
+}
+main section h1{
+  text-align:center;
+  text-transform:uppercase;
+  padding:1.5em 0;
+  font-size:20px;
+  font-family:var(--f2);
+  letter-spacing:2.5px;
+  color:#6700ee;
+}
+
+.start-btn:hover
+{
+  background:white;
+  color:#6e00ff;
+}
+
+main{
+  padding:2em 1.4em;
+}
+main section{
+  padding:1em 0;
+} 
+@media and screen(800px)
+{
+  padding:4em 2em;
+}
+.about h1
+{
+  text-transform:uppercase;
+  padding:1.5em 0;
+  font-size:20px;
+  font-family:var(--f2);
+  letter-spacing:2.5px;
+  position:relative;
+}
+.about p
+{
+  font-family:var(--f2),sans-serif;
+  font-size:18px;
+  line-height:25px;
+  text-align:center;
+}
+.about h1:after
+{
+  content:"";
+  position:absolute;
+  width:10vh;
+  height:10vh;
+  background:rgba(255,192,203,.4);
+  border-radius:50%;
+  z-index:-1;
+  left:50px;
+  top:0;
+}
+.cards{
+   border-radius:5px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-direction:column;
+ }
+.skills h1
+{
+  text-align:center;
+}
+.skills__category
+{
+  border:2px solid #6e00ff;
+  margin-bottom:2em ;
+  border-radius:5px;
+}
+.skills__category h3
+{
+   text-align:center;
+   color:#6e00ff;
+   font-weight:500;
+   font-family:var(--f2);
+   
+}
+.skills__list 
+{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;  
+}
+.skills__list li
+{
+  margin:10px;
+  font-family:var(--f2);
+  font-weight:400;
+}
+.projects>h1,.contact>h1
+{
+  text-align:center;
+  text-transform:uppercase;
+  padding:1.5em 0;
+  font-size:20px;
+  font-family:var(--f2);
+  letter-spacing:2.5px;
+  color:#6700ee;
+}
+.project__list
+{
+  background:#ff64cb;
+  padding:2em 1.5em;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  
+}
+.project__list h3
+{
+  color:#7600ee;
+  font-weight:400;
+  text-align:center;
+  margin:5px;
+}
+.project__list li
+{
+  background:white;
+  color:black;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  margin-bottom:2em;
+  border-radius:5px;
+  padding:1em 2em;
+}
+footer a{
+  color:black;
+}
+.contact{
+   padding-bottom:2em;
+}
+#userform ul{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+}
+#userform li
+{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+#userform label
+{
+  padding:1em;
+  color:#7600ee;
+}
+input[type="text"]
+{
+  border-radius:5px;
+  outline:0;
+  padding:.5em 1em;
+  border:2px solid #7600ee;
+}
+textarea
+{
+  padding:1em 1.5em;
+  border:2px solid #7600ee;
+  border-radius:5px;
+  outline:0;
+}
+input[type="button"]
+{
+    border:2px solid #7600ee;
+    padding:.5em 1.2em;
+    color:#7600ee;
+    border-radius:5px;
+    font-size:15px;
+    font-family:var(--f2);/*'Raleway',sans-serif;*/
+    background:transparent;
+    margin-left:.9em;
+    outline:0;
+    margin-top:1em;
+    font-weight:600;
+}
+footer
+{
+  background:grey;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  width:100vw;
+}
+footer div
+{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  width:90vw;
+  margin:1em 0;
+}
+.social .fa
+{
+  font-size:30px;
+}
+footer div:nth-child(2)
+{
+  flex-direction:column;
+  flex:2;
+}</style></head> 
+ <body> 
+  <header id="i"> 
+   <a href="#" class="logo">Rahul.</a> 
+   <nav> 
+    <ul> 
+     <li><a href="#projects">Projects</a></li> 
+     <li><a href="#skills">Skills</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section class="banner"> 
+   <h1>Hi...<br> I am Rahul yadav</h1> 
+   <p>web developer | Software developer</p> 
+   <button class="start-btn">let's Start</button> 
+  </section> 
+  <main> 
+   <section class="about" id="about"> 
+    <h1>About me</h1> 
+    <p>Hello there ,I am Rahul yadav a 21 year old computer science student from Jabalpur.I am a front-end developer and tech enthusiast who loves coding.I want to develop projects that would makes people's life easier.Besides coding I like reading books and listening music.</p> 
+   </section> 
+   <section class="skills" id="skills"> 
+    <h1>Skills</h1> 
+    <section class="skills__category"> 
+     <h3>Web development</h3> 
+     <ul class="skills__list"> 
+      <li> Html </li> 
+      <li> css </li> 
+      <li> JavaScript </li> 
+      <li> php </li> 
+      <ul> 
+      </ul> 
+     </ul> 
+    </section> 
+    <section class="skills__category"> 
+     <h3>Frameworks</h3> 
+     <ul class="skills__list"> 
+      <li> Node.js </li> 
+      <li> Bootstrap </li> 
+      <li> scss </li> 
+      <ul> 
+      </ul> 
+     </ul> 
+    </section> 
+    <section class="skills__category"> 
+     <h3>Languages</h3> 
+     <ul class="skills__list"> 
+      <li> C </li> 
+      <li> C++ </li> 
+      <li> Java </li> 
+      <ul> 
+      </ul> 
+     </ul> 
+    </section> 
+   </section> 
+  </main> 
+  <section class="projects" id="projects"> 
+   <h1>Projects</h1> 
+   <div class="project__list"> 
+    <ul class="pl"> 
+     <li> <h3>Tictactoe</h3> <p>This is a popular game that can be played by two players</p> </li> 
+     <li> <h3>Calculator</h3> <p>It was really a fun project that made me understand how arithmatic operations in javascript work.It also helped me in grasping the concept of classes.</p> </li> 
+     <li> <h3>Rock Paper Scissor</h3> <p>This needs no introduction ,mostly played by two players this game helped me understand functions and classlists.</p> </li> 
+     <li> <h3>Color Generator</h3> <p>It was really a useful project for me that helped me understand color gradients and why rgb values and hexcodes are important</p> </li> 
+     <li> <h3>Tip calculator</h3> <p>Simple yet effective,This was made by using input type range .</p> </li> 
+     <li> <h3>ToDo list</h3> <p>Another useful project that helps you manage your tasks .It was created using createElement and removeElement.</p> </li> 
+    </ul> 
+   </div> 
+  </section> 
+  <section class="contact" id="contact"> 
+   <h1>Contact me</h1> 
+   <form id="userform"> 
+    <ul> 
+     <li> <label for="userName">Your Name</label> <input type="text" name="userName"> </li> 
+     <li> <label for="eMail">E-mail</label> <input type="text" name="eMail"> </li> 
+     <li> <label for="message">Message</label> <textarea rows="8" cols="20" name="message"></textarea> </li> 
+     <li> <input type="button" value="submit"> </li> 
+    </ul> 
+   </form> 
+  </section> 
+  <footer> 
+   <div class="social"> 
+    <a href="https://www.instagram.com/itzrahulyadav/"><i class="fa fa-instagram"></i></a> 
+    <a href=""><i class="fa fa-facebook"></i></a> 
+    <a href="https://mobile.twitter.com/Itsrahulyadav_"><i class="fa fa-twitter"></i></a> 
+   </div> 
+   <div> 
+    <a href="mailto:rahulkyadav9691@gmail.com"><i class="fa fa-envelope"></i>My G-mail</a> 
+    <a href="tel:9691868731"><i class="fa fa-phone"></i>Telephone</a> 
+    <a href="telegram.com"><i class="fa fa-medium"></i>&nbsp; Medium</a> 
+   </div> 
+   <div>
+     © Rahul yadav 
+   </div> 
+   <p>Made with ❤ by Rahul yadav</p> 
+  </footer> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">gsap.from("header",{opacity:0,y:-100,duration:1,delay:.1});
+gsap.from(".banner",{opacity:0,y:-100,duration:1,ease:""});
+gsap.from(".banner h1",{opacity:0,y:-10,delay:.5});
+gsap.from(".start-btn",{opacity:0,y:-10,delay:1});
+gsap.from(".banner p",{opacity:0,y:-10,delay:1});
+gsap.from(".start-btn",{opacity:0,scaleX:1,duration:1})
+gsap.from(".skills",{
+       scrollTrigger:{
+            trigger:".skills",
+            toggleActions:"restart complete none reset"
+        },
+       
+       opacity:.5,
+       stagger:.5,
+       duration:1
+})
+//trigger animation
+gsap.from(".about p",{
+   y:50,opacity:0,duration:1,
+      scrollTrigger:{
+         trigger:".about p",
+         marker:true,
+         toggleActions:"restart complete none reset"
+      }      
+})
+//function for home scroll
+const home=document.querySelector(".logo");
+home.addEventListener("click",()=>{
+ gsap.from("header",{opacity:0,y:-100,duration:1,delay:.1});
+gsap.from(".banner",{opacity:0,y:-100,duration:1});
+gsap.from(".banner h1",{opacity:0,y:-10,delay:.5});
+gsap.from(".start-btn",{opacity:0,y:-10,delay:1});
+gsap.from(".banner p",{opacity:0,y:-10,delay:1});
+
+})
+gsap.from(".skills__category",{
+      scrollTrigger:{
+        trigger:".skills__category",
+        toggleActions:"restart complete none reset"
+      },
+      y:80,
+      opacity:0,
+      duration:1.5,
+      stagger:.5
+})
+
+gsap.from(".pl",{
+     scrollTrigger:{
+        trigger:".pl",
+        toggleActions:"restart complete none reset"
+     },
+     y:80,
+     opacity:0,
+     duration:2,
+     stagger:1
+     
+})
+//Yet another function
+
+const start=document.querySelector(".start-btn");
+const topValue=document.getElementById("about").offsetTop
+start.addEventListener("click",()=>{
+   scroll(0,topValue)
+})</script></body></html>
